@@ -3,9 +3,7 @@ package com.jesper.util;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-/**
- * Created by jiangyunxiong on 2018/4/2.
- */
+
 public class DateUtil {
 
     public static String  getDateStr(Date date){

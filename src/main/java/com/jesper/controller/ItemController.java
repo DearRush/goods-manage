@@ -74,7 +74,7 @@ public class ItemController {
         if (pageCount == 0) pageCount = rows % pageSize == 0 ? (rows / pageSize) : (rows / pageSize) + 1;
         item.setStart((pageCurrent - 1) * pageSize);
         item.setEnd(pageSize);
-        itemList = itemMapper.list(item);
+        itemList = itemMapper.list(item);/*查出这一分页的所有商品*/
         for (Item i : itemList) {
             i.setUpdatedStr(DateUtil.getDateStr(i.getUpdated()));
         }

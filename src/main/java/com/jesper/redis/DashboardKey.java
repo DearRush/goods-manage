@@ -1,8 +1,6 @@
 package com.jesper.redis;
 
-/**
- * Created by jiangyunxiong on 2018/5/21.
- */
+
 public class DashboardKey extends BasePrefix {
 
     public static final int BOARD_EXPIRE = 3600*24 *2;//默认两天

@@ -7,7 +7,7 @@ import java.util.Date;
 @Data
 public class ItemCategory extends BaseObject{
     private int id;
-    private  int parentId;
+    private int parentId;
     private String name;
     /**
      * 状态。可选值:1(正常),2(删除)

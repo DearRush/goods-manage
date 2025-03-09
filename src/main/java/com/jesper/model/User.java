@@ -8,7 +8,7 @@ public class User extends BaseObject {
 	private String userName;
 	private String password;
 	private String realName;
-	private String  business;
+	private String business;
 	private String email;
 	private String headPicture;
 	private Date addDate;

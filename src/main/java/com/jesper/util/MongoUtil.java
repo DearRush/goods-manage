@@ -12,9 +12,7 @@ import java.util.List;
 import java.util.Map;
 
 
-/**
- * @author think
- */
+
 public class MongoUtil {
 
     String dbName = "jesper";

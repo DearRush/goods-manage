@@ -1,8 +1,5 @@
 package com.jesper.model;
 
-/**
- * Created by jiangyunxiong on 2018/3/27.
- */
 
 /**
  * 统计类

@@ -7,7 +7,6 @@ import com.jesper.model.Stats;
 
 import com.jesper.redis.DashboardKey;
 import com.jesper.redis.RedisService;
-import com.jesper.util.RunnableThreadWebCount;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -89,8 +88,6 @@ public class DashboardController {
             redisService.set(DashboardKey.board, "lastRefundOrder", lastRefundOrder);
         }
 
-        int count = RunnableThreadWebCount.addCount("111");
-        stats.setPv(count);//访问量
         stats.setOrderNumPer(getPer(curOrderNum, preOrderNum));//月订单数环比
         stats.setmOrderNum(orderMapper.selectCurOrderNum());//月订单数
         stats.setmIncome(mIncome);//月收入
@@ -148,9 +145,4 @@ public class DashboardController {
         return orderNumPer.toString();
     }
 
-    @RequestMapping(value = "/border/website/count/")
-    @ResponseBody
-    public int count(@RequestParam("key") String key) {
-        return RunnableThreadWebCount.addCount(key);
-    }
 }
